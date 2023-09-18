@@ -1,0 +1,19 @@
+div {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  h4 {
+    margin-top: 20px;
+  }
+  
+  pre {
+    white-space: pre-wrap;
+  }
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }

@@ -1,0 +1,17 @@
+<div>
+  <input type="file" (change)="handleFileInput($event)" accept=".txt" />
+  <button (click)="calculateRepeatedWords()" [disabled]="!selectedFile">Calculate</button>
+</div>
+<div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+<div *ngIf="fileContent">
+  <h4>File Content:</h4>
+  <pre>{{ fileContent }}</pre>
+</div>
+<div *ngIf="wordCounts">
+  <h4>Word Counts:</h4>
+  <ul>
+    <li *ngFor="let count of wordCounts">{{ count.word }}: {{ count.count }}</li>
+  </ul>
+</div>
